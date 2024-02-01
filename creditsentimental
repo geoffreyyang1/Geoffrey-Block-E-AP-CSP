@@ -1,0 +1,40 @@
+# TODO
+#I worked with micahel albornoz
+
+num = input("Card Number: ")
+
+eodstrlen = len(num) - 2
+eodsum = 0
+eodsum2 = 0
+
+while eodstrlen > -1:
+    eod = (2 * int(num[eodstrlen])) 
+    if eod > 10:
+        eods = str(eod)
+        eodsum = eodsum + int(eods[1]) + int(eods[0]) #split the digit
+    else:
+        eodsum = eodsum + eod
+    eodstrlen = eodstrlen - 2
+
+eodstrlen2 = len(num) - 1
+while eodstrlen2 > -1:
+    eodsum2 = eodsum2 + int(num[eodstrlen2])
+    eodstrlen2 = eodstrlen2 - 2
+
+cardnumsum = eodsum + eodsum2
+
+checker = cardnumsum % 10
+if checker != 0:
+    print("Invalid")
+
+if int(len(num)) == 15:
+    print("AMEX")
+
+if int(len(num)) == 16 and int(num[0]) == 5 and int(num[1]) < 6: #MC checker
+    print("Mastercard")
+
+if (int(len(num)) == 13 or int(len(num)) == 16) and int(num[0]) == 4: #VISA checker
+    print("Visa")
+
+else:
+    print("Invalid")
