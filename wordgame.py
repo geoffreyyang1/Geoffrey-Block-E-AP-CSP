@@ -6,13 +6,13 @@ import sys
 import json
 from datetime import date
 
-
+#Choices
 category = {
     "NFL MVP": ["Jackson", "Mahomes", "Rodgers", "Brady", "Ryan", "Newton", "Peterson"],
     "NBA MVP": ["Embiid", "Jokic", "Antetokounmpo", "Harden", "Westbrook", "Curry", "Durant", "James"],
     "MLB MVP": ["Acuña Jr.", "Ohtani", "Goldschmidt", "Judge", "Harper", "Abreu", "Freeman", "Trout", "Bellinger"],
 }
-
+#Create the UI/menu
 def menu():
     print("|| -----Word Game-----")
     print("|| -----Options-----")
@@ -22,7 +22,7 @@ def menu():
     print("||  4) random")
     print("||  5) scoreboard")
     print("||  6) Exit")
-
+#set up the scoreboard
 def scoreboard(score, name):
     today = date.today().strftime('%Y-%m-%d')
     scoreboardfile = {
@@ -40,6 +40,7 @@ def displayscoreboard():
 wordcat = 0
 randomwordcat = 0
 otherwords = 0
+#go through the choices
 def frandom():
     wordcat = list(category.keys())
     randomwordcat = random.choice(wordcat)
@@ -114,7 +115,7 @@ def hangman(cword):
             mistakes = mistakes - 1
 
         mistakedoublechecker = 0
-
+#If they lose this is what is displayed
         if mistakes <= 0:
             print("You lost!")
             print("Your word was", end = ' ')
@@ -133,7 +134,7 @@ def hangman(cword):
             if ord(hangmanchoice[v]) == ord('_'):
                 winnerchecker = winnerchecker + 1
 
-
+#If they win this is what is displayed
         if winnerchecker == 0:
             wordchecker = True
             for e in range (10):
@@ -146,7 +147,7 @@ def hangman(cword):
 
 menuint = 0
 programrun = True
-
+#User interface direcotry
 def interface():
     menuint = input("Please select a choice: ")
     if int(menuint) == 1:
