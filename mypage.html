@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+         <head>
+            <title>
+                Hello!
+            </title>
+            <style>
+                table {
+                    border: 3px solid green;
+                    border-collapse: collapse;
+                }
+                td, th {
+                    border: 3px solid blue;
+                    padding: 3px;
+                }
+            </style>
+         </head>
+         <body>
+            <h1>
+                This is a heading
+            </h1>
+            <h2>
+                This is another heading
+            </h2>
+            <hr>
+            <h3> Unordered List </h3>
+                <ul>
+                    <li> Item 1 </li>
+                    <li> Item 2 </li>
+                    <li> Item 3 </li>
+                </ul>
+            <hr>
+            <h3>
+                Ordered List
+            </h3>
+                <ol>
+                    <li> One </li>
+                    <li> Two </li>
+                    <li> Three </li>
+                </ol>
+            <hr>
+            <h3>
+                Image (600px width, 400px height)
+            </h3>
+            <img src="images/yard.bmp" alt="yard" width=600px height = 400px>
+            <hr>
+            <a href="https://google.com">Link (Text)</a>
+            <hr>
+            <h3>
+                Image link
+            </h3>
+            <a href="https://google.com"><img src="images/yard.bmp" width=200px height = 100px></a>
+            <hr>
+            <h3>
+                Table
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ocean</th>
+                        <th>Average Depth</th>
+                        <th>Maxiumn Depth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pacific</td>
+                        <td>14040ft</td>
+                        <td>36201ft</td>
+                    </tr>
+                    <tr>
+                        <td>Atlanic</td>
+                        <td>11962ft</td>
+                        <td>27493ft</td>
+                    </tr>
+                    <tr>
+                        <td>Arctic</td>
+                        <td>3406ft</td>
+                        <td>18210ft</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>
+                Form
+            </h3>
+            <form>
+                <input type="text" placeholder="Full Name" name="full_name">
+
+                <input type="password" placeholder="Password" name="password">
+                <input type="submit">
+
+                <input type="radio" name="color" value="Red"> Red
+                <input type="radio" name="color" value="Green"> Green
+                <input type="radio" name="color" value="Blue"> Blue
+                <input type="radio" name="color" value="Yellow"> Yellow
+
+                <input list="countries" name="country" placeholder="Country">
+                <datalist id="countries">
+                    <option value ="USA"></option>
+                    <option value ="USA"></option>
+                    <option value ="USA"></option>
+                    <option value ="USA"></option>
+                </datalist>
+            </form>
+         </body>
+    </html>
+</DOCTYPE>
