@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+         <head>
+            <title>
+                My Website
+            </title>
+            <style>
+                tr {
+                    border-collapse: collapse;
+                    align: center;
+                }
+                td, th {
+                    border: 3px solid cornflowerblue;
+                    padding: 3px;
+                }
+
+                h1 {
+                font-family: Tahoma, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                }
+                button {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                }
+                h3 {
+                font-family: Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                }
+                input {
+                font-family: Tahoma, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                }
+                h4 {
+                font-family: Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                }
+                h5 {
+                font-family: Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                }
+                h1 {
+                background-color: dodgerblue;
+                height: 65px;
+                text-align: center;
+                margin: 10px;
+                padding: 30px;
+                }
+                .swing {
+                    height: 350px;
+                }
+            </style>
+         </head>
+         <body>
+            <h1>
+                Geoffrey Yang
+            </h1>
+
+            <img src="secondary/images/mainimage.png" class="swing">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="index.html"> <button>Home</button> </a>
+                        </th>
+                        <th>
+                            <a href="secondary/aboutme.html"> <button>About me</button> </a>
+                        </th>
+                        <th>
+                            <a href="secondary/baseball.html"> <button>Baseball Career</button> </a>
+                        </th>
+                        <th>
+                            <a href="secondary/classes.html"> <button>Current Classes</button> </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <h3>
+                How did you hear about this Website?
+            </h3>
+            <form>
+
+                <input type="radio" name="color" value="Red"> Family
+                <input type="radio" name="color" value="Green"> Friends
+                <input type="radio" name="color" value="Blue"> E-mail
+                <input type="radio" name="color" value="Yellow"> Other (type)
+
+                <input type="text" placeholder="(e.g. Web surfing)" name="full_name">
+
+                <input type="submit">
+                <h4>
+                    Where are you from?
+                </h4>
+                <input list="countries" name="country" placeholder="Region">
+                <datalist id="countries">
+                    <option value ="USA"></option>
+                    <option value ="Canada"></option>
+                    <option value ="Mexico"></option>
+                    <option value ="Europe"></option>
+                    <option value ="Asia"></option>
+                    <option value ="Africa"></option>
+                    <option value ="South America"></option>
+                    <option value ="Other"></option>
+                </datalist>
+                <h5>
+                    Visit my MaxPreps page!
+                </h5>
+                <li><a href="https://www.maxpreps.com/ca/claremont/the-webb-school-gauls/athletes/geoffrey-yang/?careerid=op6o50ogb0oh1">MaxPreps</a></li>
+            </form>
+         </body>
+    </html>
+</DOCTYPE>
